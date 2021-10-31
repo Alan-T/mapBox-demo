@@ -1,0 +1,26 @@
+{
+  "name": "mapbox-demo",
+  "version": "1.0.0",
+  "description": "mapbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alan-T/mapBox-demo.git"
+  },
+  "keywords": [
+    "mapbox"
+  ],
+  "author": "alan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alan-T/mapBox-demo/issues"
+  },
+  "homepage": "https://github.com/Alan-T/mapBox-demo#readme",
+  "devDependencies": {
+    "webpack": "^5.61.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
