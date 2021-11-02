@@ -1,7 +1,7 @@
 function component() {
     const element = document.createElement('div');
 
-    element.innerHTML = 'Hello,mapboxs  !';
+    element.innerHTML = 'Hello,mapbox  !';
   
     return element;
   }
