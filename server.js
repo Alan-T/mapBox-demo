@@ -1,6 +1,7 @@
 const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
+const history = require('connect-history-api-fallback')
 
 const app = express();
 const config = require('./webpack.dev.js');
@@ -8,6 +9,7 @@ const compiler = webpack(config);
 
 // 告知 express 使用 webpack-dev-middleware，
 // 以及将 webpack.config.js 配置文件作为基础配置。
+app.use(history())
 app.use(
   webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath,

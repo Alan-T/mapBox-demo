@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Alan-T/mapBox-demo#readme",
   "devDependencies": {
+    "connect-history-api-fallback": "^1.6.0",
     "css-loader": "^6.5.0",
     "csv-loader": "^3.0.3",
     "express": "^4.17.1",
