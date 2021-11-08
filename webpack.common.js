@@ -33,6 +33,10 @@ module.exports = {
         test: /\.xml$/i,
         use: ['xml-loader'],
       },
+      {
+        test: /\.html$/i,
+        use: ['html-loader'],
+      },
     ],
   },
   plugins: [

@@ -21,15 +21,11 @@ function onLoad() {
 
 // 路由变化时，根据路由渲染对应 UI
 function onPopState() {
-  debugger
-  switch (location.pathname) {
-    case '/home':
-      routerView.innerHTML = 'Home'
-      return
-    case '/about':
-      routerView.innerHTML = 'About'
-      return
-    default:
-      return
+  const html = require(`./pages${location.pathname}.html`).default
+  if (html) {
+    routerView.innerHTML = html;
+  } else {
+    routerView.innerHTML = null;
   }
+
 }
